@@ -4,6 +4,7 @@ function AllMovies() {
   return (
     <>
      <SearchBox />
+     <div className='container'>
     <div className = "movie-poster">
     <img src = '' alt = "movie poster"/>
     </div>
@@ -20,6 +21,7 @@ function AllMovies() {
     <p className = "plot"><b>Plot:</b> </p>
     <p className = "language"><b>Language:</b> \</p>
     <p className = "awards"><b><i className = "fas fa-award"></i></b> </p>
+</div>
 </div>
 </>
   )

@@ -16,8 +16,6 @@ function App() {
     
     <div className='wrapper'>
     <NavBar />
-    <AllMovies />
-    
     <Switch>
     <Route  exact path="/">
       <AllMovies />
