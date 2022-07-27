@@ -111,3 +111,18 @@ img {
     max-width: 400px;
     margin: 1rem auto;
 }
+
+.movie-info .language {
+    color: var(--yellow-color);
+    font-style: italic;
+}
+
+.movie-info .awards {
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.movie-info .awards i {
+    color: var(--yellow-color);
+    margin: 1rem 0.7rem 0 0;
+}
