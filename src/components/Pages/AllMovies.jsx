@@ -1,12 +1,13 @@
 import React from 'react'
-
+import SearchBox from '../Navigation/search'
 function AllMovies() {
   return (
     <>
+     <SearchBox />
     <div className = "movie-poster">
     <img src = '' alt = "movie poster"/>
     </div>
-<div className = "movie-info">
+   <div className = "movie-info">
     <h3 className = "movie-title"></h3>
     <ul className = "movie-misc-info">
         <li className = "year">Year: </li>
