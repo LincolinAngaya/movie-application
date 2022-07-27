@@ -5,7 +5,7 @@ import AllMovies from './components/Pages/AllMovies';
 import FavoriteMovies from './components/Pages/FavoriteMovies';
 import NewMovies from './components/Pages/NewMovies';
 
-import Layout from "./components/Navigation/Layout";
+import Layout from "./components/layout/Layout";
 function App() {
   return (
     
