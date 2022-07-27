@@ -10,7 +10,7 @@ function NavBar() {
             <ul>
                 <Link to='/'>Movies</Link>
                 <Link to='/new-movies'>New-Movies</Link>
-                <Link to='/favorites'>Favoorite-Movies</Link>
+                <Link to='/favorites'>Favorite-Movies</Link>
             </ul>
         </nav>
     </header>
