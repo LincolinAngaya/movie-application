@@ -1,6 +1,6 @@
 import React from 'react'
-
-function search() {
+import './nav.css'
+function SearchBox() {
   return (
     <div className='search-container'>
     <div className="search-element">
@@ -11,4 +11,4 @@ function search() {
   )
 }
 
-export default search
+export default SearchBox;
