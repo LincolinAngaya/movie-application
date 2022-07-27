@@ -1,12 +1,13 @@
 import React from 'react'
 import SearchBox from '../Navigation/search'
+import poster from '../Pages/landing.jpg'
 function AllMovies() {
   return (
     <>
      <SearchBox />
-     <div className='container'>
+     <div className='result-container'>
     <div className = "movie-poster">
-    <img src = '' alt = "movie poster"/>
+    <img src = {poster}alt = "movie poster"/>
     </div>
    <div className = "movie-info">
     <h3 className = "movie-title"></h3>
