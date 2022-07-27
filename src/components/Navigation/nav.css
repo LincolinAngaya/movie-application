@@ -79,7 +79,7 @@
             .search-element .form-control {
                 padding: 1rem 2rem;
                 font-size: 1.4rem;
-                border: none;
+                border: 1px solid #77002e;
                 border-top-left-radius: 3px;
                 border-bottom-left-radius: 3px;
                 outline: none;
@@ -104,6 +104,11 @@
                 }
                 nav {
                     display: none;
+                }
+                .search-element .form-control {
+                    width: 90%;
+                    margin: 0 auto;
+                    padding: 0.5rem 1rem;
                 }
             }
             
