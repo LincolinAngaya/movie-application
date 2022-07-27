@@ -4,12 +4,13 @@ import {Route, BrowserRouter,Switch} from 'react-router-dom';
 import AllMovies from './components/Pages/AllMovies';
 import FavoriteMovies from './components/Pages/FavoriteMovies';
 import NewMovies from './components/Pages/NewMovies';
+import './layout.css'
 
 import Layout from "./components/layout/Layout";
 function App() {
   return (
     
-   <div>
+    <div className='wrapper'>
     <Layout/>
     <Switch>
     <Route  exact path="/">

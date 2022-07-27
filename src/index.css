@@ -25,3 +25,14 @@ img {
     width: 100%;
     display: block;
 }
+
+.wrapper {
+    min-height: 100vh;
+    background-color: #292929;
+}
+
+.wrapper .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}

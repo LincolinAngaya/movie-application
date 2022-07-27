@@ -4,7 +4,6 @@ function SearchBox() {
   return (
     <div className='search-container'>
     <div className="search-element">
-
         <input type="text" className="form-control" />
     </div>
 </div>
