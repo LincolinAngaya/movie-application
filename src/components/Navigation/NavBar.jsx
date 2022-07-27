@@ -14,6 +14,7 @@ function NavBar() {
             </ul>
         </nav>
     </header>
+    
   )
 }
 
