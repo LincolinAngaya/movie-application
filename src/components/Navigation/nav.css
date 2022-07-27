@@ -46,8 +46,8 @@
             /* //search bar */
             
             .search-container {
-                background-color: var(--md-dark-color);
-                height: 180px;
+                background-color: white;
+                height: 100px;
                 display: -webkit-box;
                 display: -ms-flexbox;
                 display: flex;
