@@ -55,3 +55,11 @@ img {
     color: #fff;
     padding-top: 3rem;
 }
+
+
+/* movie info stylings */
+
+.movie-title {
+    font-size: 2rem;
+    color: var(--yellow-color);
+}
