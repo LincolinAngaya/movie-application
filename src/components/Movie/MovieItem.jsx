@@ -5,12 +5,12 @@ import '../Movie/MovieItem.css'
 
 function MovieItem() {
   return (
-     <section id="section-b" class="grid">
+     <section id="section-b" className="grid">
     <ul>
       <li>
-        <div class="card">
+        <div className="card">
         <img   src={poster} alt='poster' />
-          <div class="card-content">
+          <div className="card-content">
           <h1 className='title'> Movie Title:<span>The Post</span></h1>
      <h1 className='year'>Movie Type:<span> Action</span></h1>
      <h1 className='year'>Movie Year: <span>2021</span></h1>

@@ -4,7 +4,7 @@ function MovieList() {
   return (
     <div>
       < MovieItem />
-      <>hello movie item</>
+     
     </div>
   )
 }
