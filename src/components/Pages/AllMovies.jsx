@@ -1,33 +1,9 @@
 import React from 'react'
 import {useState} from 'react'
+import {useEffect} from 'react'
 import SearchBox from '../Navigation/search'
 import MovieList from '../Movie/MovieList'
 
-const DUMMY_DATA =[{
-  Title: "Thor",
-  Year: 2011,
-  id: 1,
-  Type: "movie",
-  Poster: "https://m.media-amazon.com/images/M/MV5BOGE4NzU1YTAtNzA3Mi00ZTA2LTg2YmYtMDJmMThiMjlkYjg2XkEyXkFqcGdeQXVyNTgzMDMzMTg@._V1_SX300.jpg",
-  Trailer:"It a country that is being suspected to be corrupt and private institution sending Mallek for probe"
-}, 
-{
-  Title: "Thor: Ragnarok",
-  Year: 2017,
-  id: 2,
-  Type: "movie",
-  Poster: "https://m.media-amazon.com/images/M/MV5BMjMyNDkzMzI1OF5BMl5BanBnXkFtZTgwODcxODg5MjI@._V1_SX300.jpg",
-  Trailer:"It a country that is being suspected to be corrupt and private institution sending Mallek for probe"
-},
-{
-  Title: "Thor: Ragnarok",
-  Year: 2017,
-  id: 3,
-  Type: "movie",
-  Poster: "https://m.media-amazon.com/images/M/MV5BMjMyNDkzMzI1OF5BMl5BanBnXkFtZTgwODcxODg5MjI@._V1_SX300.jpg",
-  Trailer:"It a country that is being suspected to be corrupt and private institution sending Mallek for probe"
-},
-];
 function AllMovies() {
   const [isLoading, setIsLoading]=useState(true);
   const[loadedMovies,setLoadedmovies]=useState([]);
@@ -36,7 +12,8 @@ function AllMovies() {
     response.json();
   })
   .then(data => {
-    setIsLoading(false)
+    setIsLoading(false);
+    setLoadedmovies(data)
 
   });
   if (isLoading){
