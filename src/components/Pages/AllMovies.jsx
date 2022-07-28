@@ -9,9 +9,12 @@ function AllMovies() {
   const [showMovie, setShowMovie] = useState([])
   
  useEffect(() => {
-
+  const getMovies = async () => {
+    const moviesFromServer = await fetchMovies()
+    setShowMovie(moviesFromServer)
+  }
   
-     fetchMovies();
+  getMovies();
   },[])
 
   //fetchmovies
@@ -22,7 +25,7 @@ function AllMovies() {
    // console.log(data)
    return data
   }
-  
+
   return (
     <>
      <SearchBox />
