@@ -86,9 +86,9 @@
         }
         #section-b ul {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
         }
         #section-b li {
-            width: 42%;
+            width: 35%;
         }
     }
