@@ -11,7 +11,7 @@ function MovieList({movies}) {
 
           <MovieItem 
           key={movie.id}
-          id={movie.id}
+          // id={movie.id}
           Poster={movie.Poster}
           Title={movie.Title}
           Type={movie.Type}
@@ -28,4 +28,4 @@ function MovieList({movies}) {
   )
 }
 
-export default MovieList
+export default MovieList;

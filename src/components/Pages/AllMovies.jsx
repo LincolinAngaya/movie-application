@@ -6,31 +6,34 @@ import MovieList from '../Movie/MovieList'
 
 
 function AllMovies() {
-  const [showMovie, setShowMovie] = useState([])
+  const [IsLoading,setIsLoading]=useState(true);
+  const [loadedMovies,setLoadedMovies]=useState([]);
   
- useEffect(() => {
-  const getMovies = async () => {
-    const moviesFromServer = await fetchMovies()
-    setShowMovie(moviesFromServer)
-  }
-  
-  getMovies();
-  },[])
+        useEffect(() => {
+     
+        },[])
 
-  //fetchmovies
-  const fetchMovies = async () => {
-    const res = await  fetch('https://phase-2-project-599c2-default-rtdb.firebaseio.com/movies.json')
-   const data = await res.json()
+   fetch('https://phase-2-project-599c2-default-rtdb.firebaseio.com/movies.json')
 
-   // console.log(data)
-   return data
-  }
+   .then(response => {
+    return response.json();
+   })
 
+   .then(data => {
+      setIsLoading(false);
+      setIsLoading(data);
+   });
+
+   if (IsLoading){
+    return <section>
+      <p>loading...</p>
+    </section>
+   }
   return (
     <>
      <SearchBox />
      <h1 style={{color:'white'}}>All Movies</h1>
-     <MovieList movies={showMovie} />
+     <MovieList movies={loadedMovies} />
      
 </>
   )
