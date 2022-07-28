@@ -5,7 +5,7 @@
     }
     
     h1 {
-        color: yellow;
+        color: #a50e48;
         text-align: left;
         font-family: 'Roboto Slab', serif;
     }
@@ -28,7 +28,7 @@
     }
     
     span {
-        color: white;
+        color: #333;
         font-size: 25px;
         font-family: 'Edu VIC WA NT Beginner', cursive;
     }
