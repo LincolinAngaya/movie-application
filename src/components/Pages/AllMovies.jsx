@@ -6,7 +6,7 @@ import MovieList from '../Movie/MovieList'
 const DUMMY_DATA =[{
   Title: "Thor",
   Year: 2011,
-  imdbID: "tt0800369",
+  id: 1,
   Type: "movie",
   Poster: "https://m.media-amazon.com/images/M/MV5BOGE4NzU1YTAtNzA3Mi00ZTA2LTg2YmYtMDJmMThiMjlkYjg2XkEyXkFqcGdeQXVyNTgzMDMzMTg@._V1_SX300.jpg",
   Trailer:"It a country that is being suspected to be corrupt and private institution sending Mallek for probe"
@@ -14,7 +14,15 @@ const DUMMY_DATA =[{
 {
   Title: "Thor: Ragnarok",
   Year: 2017,
-  imdbI: "tt3501632",
+  id: 2,
+  Type: "movie",
+  Poster: "https://m.media-amazon.com/images/M/MV5BMjMyNDkzMzI1OF5BMl5BanBnXkFtZTgwODcxODg5MjI@._V1_SX300.jpg",
+  Trailer:"It a country that is being suspected to be corrupt and private institution sending Mallek for probe"
+},
+{
+  Title: "Thor: Ragnarok",
+  Year: 2017,
+  id: 2,
   Type: "movie",
   Poster: "https://m.media-amazon.com/images/M/MV5BMjMyNDkzMzI1OF5BMl5BanBnXkFtZTgwODcxODg5MjI@._V1_SX300.jpg",
   Trailer:"It a country that is being suspected to be corrupt and private institution sending Mallek for probe"
@@ -25,7 +33,7 @@ function AllMovies() {
     <>
      <SearchBox />
      <h1 style={{color:'white'}}>All Movies</h1>
-     <MovieList Movielist={ DUMMY_DATA} />
+     <MovieList movielist={DUMMY_DATA} />
      
 </>
   )

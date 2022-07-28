@@ -1,23 +1,28 @@
 import React from 'react'
-import MovieItem from './MovieItem'
-import '../Movie/MovieItem.css'
-function MovieList(props) {
+import './MovieItem.css'
+import MovieItem from '../Movie/MovieItem'
+
+function MovieList({movielist}) {
   return (
-    
-        <li>
-          
-          {props.movielist.map((movie) => (
+      <section id="section-b" className="grid">
+       <ul>
+          {movielist.map((movie) => 
+          (
+
           <MovieItem 
-          key={movie.mdbID}
-          Title={movie.Poster}
+          key={movie.id}
+          Poster={movie.Poster}
+          Title={movie.Title}
           Type={movie.Type}
           Year={movie.Year}
           Trailer={movie.Trailer}
 
           />
+         
           ))}
-          
-          </li>
+      </ul>
+      </section>
+  
    
   )
 }
