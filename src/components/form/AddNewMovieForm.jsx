@@ -27,6 +27,7 @@ function AddNewMovieForm() {
                 Trailer:enteredTrailer,
             };
             // console.log(movieDetails);
+            //https://phase-2-project-599c2-default-rtdb.firebaseio.com/
     }
   return (
     <div className='Card'>
