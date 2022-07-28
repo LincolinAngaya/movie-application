@@ -29,7 +29,8 @@ const DUMMY_DATA =[{
 },
 ];
 function AllMovies() {
-  const [isLoading, setIsLoading]=useState(true)
+  const [isLoading, setIsLoading]=useState(true);
+  const[loadedMovies,setLoadedmovies]=useState([]);
 
   fetch('https://phase-2-project-599c2-default-rtdb.firebaseio.com/movies.json').then(response => {
     response.json();
