@@ -1,7 +1,10 @@
 import React from 'react'
+import {useRef} from 'react'
 import './addNewForm.css'
 function AddNewMovieForm() {
-    function submitHandler(){
+    function submitHandler(e){
+           e.preventDefault();
+
 
     }
   return (
@@ -9,7 +12,7 @@ function AddNewMovieForm() {
     <form className='form' onSubmit={submitHandler}>
     <div className='control'>
             <label htmlFor='image'>Movie Image</label>
-            <input type="url"  required id="image"/>
+            <input type="url"  required id="image" onChange={}/>
         </div>
     <div className='control'>
             <label htmlFor='title'>Movie Title</label>
