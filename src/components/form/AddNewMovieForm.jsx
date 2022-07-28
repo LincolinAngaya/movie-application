@@ -2,17 +2,20 @@ import React from 'react'
 import {useRef} from 'react'
 import './addNewForm.css'
 function AddNewMovieForm() {
+    const imageInputRef = useRef();
+
     function submitHandler(e){
            e.preventDefault();
 
-
+            const enteredImage = imageInputRef.current.value;
+         
     }
   return (
     <div classname='Card'>
     <form className='form' onSubmit={submitHandler}>
     <div className='control'>
             <label htmlFor='image'>Movie Image</label>
-            <input type="url"  required id="image" onChange={}/>
+            <input type="url"  required id="image" ref={imageInputRef} />
         </div>
     <div className='control'>
             <label htmlFor='title'>Movie Title</label>
