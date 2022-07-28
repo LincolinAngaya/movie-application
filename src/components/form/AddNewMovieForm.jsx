@@ -2,7 +2,7 @@ import Title from 'antd/lib/skeleton/Title';
 import React from 'react'
 import {useRef} from 'react'
 import './addNewForm.css'
-function AddNewMovieForm() {
+function AddNewMovieForm(props) {
     const imageInputRef = useRef();
     const titleInputRef = useRef();
     const typeInputRef = useRef();
@@ -28,6 +28,7 @@ function AddNewMovieForm() {
             };
             // console.log(movieDetails);
             //https://phase-2-project-599c2-default-rtdb.firebaseio.com/
+            props.onAddMovie(movieDetails)
     }
   return (
     <div className='Card'>
