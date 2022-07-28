@@ -1,4 +1,5 @@
 import React from 'react'
+import {useState} from 'react'
 import SearchBox from '../Navigation/search'
 import MovieList from '../Movie/MovieList'
 
@@ -28,6 +29,13 @@ const DUMMY_DATA =[{
 },
 ];
 function AllMovies() {
+  const [isLOading, setIsLoading]=useState(false)
+
+  fetch('https://phase-2-project-599c2-default-rtdb.firebaseio.com/movies.json').then(response => {
+    response.json();
+  }).then(data => {
+
+  })
   return (
     <>
      <SearchBox />
