@@ -1,11 +1,24 @@
 import React from 'react'
 import MovieItem from './MovieItem'
-function MovieList() {
+import '../Movie/MovieItem.css'
+function MovieList(props) {
   return (
-    <div>
-      < MovieItem />
-     
-    </div>
+    
+        <li>
+          
+          {props.movielist.map((movie) => (
+          <MovieItem 
+          key={movie.mdbID}
+          Title={movie.Poster}
+          Type={movie.Type}
+          Year={movie.Year}
+          Trailer={movie.Trailer}
+
+          />
+          ))}
+          
+          </li>
+   
   )
 }
 

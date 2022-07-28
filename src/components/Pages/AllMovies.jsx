@@ -3,19 +3,21 @@ import SearchBox from '../Navigation/search'
 import poster from '../Pages/landing.jpg'
 import MovieList from '../Movie/MovieList'
 
-const DUMMY_DATA=[{
+const DUMMY_DATA =[{
   Title: "Thor",
   Year: 2011,
   imdbID: "tt0800369",
   Type: "movie",
-  Poster: "https://m.media-amazon.com/images/M/MV5BOGE4NzU1YTAtNzA3Mi00ZTA2LTg2YmYtMDJmMThiMjlkYjg2XkEyXkFqcGdeQXVyNTgzMDMzMTg@._V1_SX300.jpg"
+  Poster: "https://m.media-amazon.com/images/M/MV5BOGE4NzU1YTAtNzA3Mi00ZTA2LTg2YmYtMDJmMThiMjlkYjg2XkEyXkFqcGdeQXVyNTgzMDMzMTg@._V1_SX300.jpg",
+  Trailer:"It a country that is being suspected to be corrupt and private institution sending Mallek for probe"
 }, 
 {
   Title: "Thor: Ragnarok",
   Year: 2017,
   imdbI: "tt3501632",
   Type: "movie",
-  Poster: "https://m.media-amazon.com/images/M/MV5BMjMyNDkzMzI1OF5BMl5BanBnXkFtZTgwODcxODg5MjI@._V1_SX300.jpg"
+  Poster: "https://m.media-amazon.com/images/M/MV5BMjMyNDkzMzI1OF5BMl5BanBnXkFtZTgwODcxODg5MjI@._V1_SX300.jpg",
+  Trailer:"It a country that is being suspected to be corrupt and private institution sending Mallek for probe"
 },
 ];
 function AllMovies() {
@@ -23,14 +25,10 @@ function AllMovies() {
     <>
      <SearchBox />
      <h1 style={{color:'white'}}>All Movies</h1>
-     <MovieList />
-     <ul>
-   {DUMMY_DATA.map((movie) =>{
-    return <li key={movie.imdbID}>{movie.Title}</li>
-   })}
-   </ul>
+     <MovieList Movielist={ DUMMY_DATA} />
+     
 </>
   )
 }
 
-export default AllMovies
+export default AllMovies;
