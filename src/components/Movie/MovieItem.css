@@ -1,53 +1,58 @@
-            .actions {
-                margin-top: 1rem;
-                text-align: right;
-            }
-            
-            h1 {
-                color: yellow;
-                text-align: left;
-            }
-            
-            .actions {
-                font: inherit;
-                cursor: pointer;
-                background-color: #77002e;
-                color: yellow;
-                padding: 0.5rem 1.5rem;
-                border: 1px solid #77002e;
-                border-radius: 4px;
-                font-weight: bold;
-            }
-            
-            .actions:hover,
-            .actions:active {
-                background-color: #a50e48;
-                border-color: #a50e48;
-            }
-            
-            .wrapper-grid {
-                display: grid;
-                grid-template-columns: 1fr;
-                justify-content: center;
-                grid-gap: 2rem;
-            }
-            
-            .container {
-                box-shadow: 0px 2px 8px 0px gray;
-                text-align: center;
-                border-radius: 1rem;
-                position: relative;
-            }
-            
-            .banner-img {
-                position: absolute;
-                height: 10rem;
-                width: 100%;
-            }
-            
-            .content {
-                align-items: left;
-            }
-            /* span {
-                color: yellow;
-            } */
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap');
+.actions {
+    margin-top: 1rem;
+    text-align: right;
+}
+
+h1 {
+    color: yellow;
+    text-align: left;
+    font-family: 'Roboto Slab', serif;
+}
+
+.actions {
+    font: inherit;
+    cursor: pointer;
+    background-color: #77002e;
+    color: yellow;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid #77002e;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.actions:hover,
+.actions:active {
+    background-color: #a50e48;
+    border-color: #a50e48;
+}
+
+.wrapper-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    grid-gap: 2rem;
+}
+
+.container {
+    box-shadow: 0px 2px 8px 0px gray;
+    text-align: center;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.banner-img {
+    position: absolute;
+    height: 10rem;
+    width: 100%;
+}
+
+.content {
+    align-items: left;
+}
+
+span {
+    color: white;
+    font-size: 25px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
