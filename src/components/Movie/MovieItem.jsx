@@ -10,11 +10,11 @@ function MovieItem() {
            <img   src={poster} alt='poster' />
          </div> */}
          <div className='content'>
-           <h1 className='title'> The Post</h1>
-           <h1 className='year'> Action</h1>
-           <h1 className='year'> 2021</h1>
-           <h1 className='year'> tyler perry mike tyson, vandebeek</h1>
-           <p className='description'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem nesciunt quibusdam voluptate, debitis rem illo similique ipsa aliquid cumque quidem suscipit quos dolores. Tenetur quam asperiores </p>
+           <h1 className='title'> <span>Movie Title:</span>The Post</h1>
+           <h1 className='year'><span>Movie Type: </span>Action</h1>
+           <h1 className='year'><span>Movie Year: </span>2021</h1>
+           <h1 className='year'><span> Movie Producers:</span>tyler perry mike tyson, vandebeek</h1>
+           <p className='description'><span>Movie Trailr:</span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem nesciunt quibusdam voluptate, debitis rem illo similique ipsa aliquid cumque quidem suscipit quos dolores. Tenetur quam asperiores </p>
           <button className='actions'>Pick Movie</button>
 
           </div>
