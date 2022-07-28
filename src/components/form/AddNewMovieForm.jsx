@@ -1,9 +1,12 @@
 import React from 'react'
 import './addNewForm.css'
 function AddNewMovieForm() {
+    function submitHandler(){
+
+    }
   return (
     <div classname='Card'>
-    <form className='form'>
+    <form className='form' onSubmit={submitHandler}>
     <div className='control'>
             <label htmlFor='image'>Movie Image</label>
             <input type="url"  required id="image"/>
