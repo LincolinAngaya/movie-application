@@ -1,3 +1,4 @@
+import Title from 'antd/lib/skeleton/Title';
 import React from 'react'
 import {useRef} from 'react'
 import './addNewForm.css'
@@ -18,9 +19,17 @@ function AddNewMovieForm() {
             const enteredYear = yearInputRef.current.value;
             const enteredTrailer = trailerInputRef.current.value;
          
+            const movieDetails={
+                Poster:enteredImage,
+                Title:enteredTitle,
+                Type:enteredType,
+                Year:enteredYear,
+                Trailer:enteredTrailer,
+            };
+            // console.log(movieDetails);
     }
   return (
-    <div classname='Card'>
+    <div className='Card'>
     <form className='form' onSubmit={submitHandler}>
     <div className='control'>
             <label htmlFor='image'>Movie Image</label>
@@ -50,4 +59,4 @@ function AddNewMovieForm() {
   )
 }
 
-export default AddNewMovieForm
+export default AddNewMovieForm;
