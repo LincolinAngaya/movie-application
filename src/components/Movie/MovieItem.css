@@ -4,7 +4,8 @@
             }
             
             h1 {
-                color: white;
+                color: yellow;
+                text-align: left;
             }
             
             .actions {
@@ -44,4 +45,9 @@
                 width: 100%;
             }
             
-            .content {}
+            .content {
+                align-items: left;
+            }
+            /* span {
+                color: yellow;
+            } */
