@@ -5,12 +5,12 @@
     }
     
     h1 {
-        color: #a50e48;
+        color: white;
         text-align: left;
         font-family: 'Roboto Slab', serif;
     }
     
-    .actions {
+    .action {
         font: inherit;
         cursor: pointer;
         background-color: #77002e;
@@ -21,14 +21,14 @@
         font-weight: bold;
     }
     
-    .actions:hover,
-    .actions:active {
+    .action:hover,
+    .action:active {
         background-color: #a50e48;
         border-color: #a50e48;
     }
     
     span {
-        color: #333;
+        color: white;
         font-size: 25px;
         font-family: 'Edu VIC WA NT Beginner', cursive;
     }

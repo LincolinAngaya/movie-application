@@ -5,34 +5,28 @@ function AddNewMovieForm() {
     <div classname='Card'>
     <form className='form'>
     <div className='control'>
-            <label htmlFor='title'>Movie Number</label>
-            <input type="text"  required id="title"/>
+            <label htmlFor='image'>Movie Image</label>
+            <input type="url"  required id="image"/>
         </div>
-        <div className='control'>
+    <div className='control'>
             <label htmlFor='title'>Movie Title</label>
             <input type="text"  required id="title"/>
         </div>
         <div className='control'>
-            <label htmlFor='title'>Movie Type</label>
-            <input type="text"  required id="title"/>
+            <label htmlFor='type'>Movie Type</label>
+            <input type="text"  required id="type"/>
         </div>
         <div className='control'>
-            <label htmlFor='title'>Movie Year</label>
-            <input type="text"  required id="title"/>
+            <label htmlFor='year'>Movie Year</label>
+            <input type="text"  required id="year"/>
         </div>
-
         <div className='control'>
-            <label htmlFor='image'>Movie Image</label>
-            <input type="url"  required id="image"/>
+            <label htmlFor='description'>Movie Trailer</label>
+            <textarea id="description" required rows='5' />
         </div>
-
-        
- 
         <div className='actions'>
-            <button>Add Movie</button>
+            <button>Add Meetup</button>
         </div>
-
-
     </form>
   </div>
   )
