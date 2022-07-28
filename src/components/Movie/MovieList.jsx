@@ -11,6 +11,7 @@ function MovieList({movielist}) {
 
           <MovieItem 
           key={movie.id}
+          id={movie.id}
           Poster={movie.Poster}
           Title={movie.Title}
           Type={movie.Type}

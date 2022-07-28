@@ -1,6 +1,5 @@
 import React from 'react'
 import SearchBox from '../Navigation/search'
-import poster from '../Pages/landing.jpg'
 import MovieList from '../Movie/MovieList'
 
 const DUMMY_DATA =[{
@@ -22,7 +21,7 @@ const DUMMY_DATA =[{
 {
   Title: "Thor: Ragnarok",
   Year: 2017,
-  id: 2,
+  id: 3,
   Type: "movie",
   Poster: "https://m.media-amazon.com/images/M/MV5BMjMyNDkzMzI1OF5BMl5BanBnXkFtZTgwODcxODg5MjI@._V1_SX300.jpg",
   Trailer:"It a country that is being suspected to be corrupt and private institution sending Mallek for probe"
