@@ -10,13 +10,19 @@ function AllMovies() {
   
  useEffect(() => {
 
-   const fetchMovies = async () => {
-     const res = await  fetch('https://phase-2-project-599c2-default-rtdb.firebaseio.com/movies.json')
-    const data = await res.json()
-    console.log(data)
-   }
+  
      fetchMovies();
   },[])
+
+  //fetchmovies
+  const fetchMovies = async () => {
+    const res = await  fetch('https://phase-2-project-599c2-default-rtdb.firebaseio.com/movies.json')
+   const data = await res.json()
+
+   // console.log(data)
+   return data
+  }
+  
   return (
     <>
      <SearchBox />
