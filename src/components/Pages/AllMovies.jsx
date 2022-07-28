@@ -29,13 +29,22 @@ const DUMMY_DATA =[{
 },
 ];
 function AllMovies() {
-  const [isLOading, setIsLoading]=useState(false)
+  const [isLoading, setIsLoading]=useState(true)
 
   fetch('https://phase-2-project-599c2-default-rtdb.firebaseio.com/movies.json').then(response => {
     response.json();
-  }).then(data => {
-
   })
+  .then(data => {
+    setIsLoading(false)
+
+  });
+  if (isLoading){
+    return(
+      <section>
+        <p>Loading....</p>
+      </section>
+    )
+  }
   return (
     <>
      <SearchBox />
