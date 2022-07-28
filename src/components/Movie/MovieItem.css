@@ -5,7 +5,7 @@
     }
     
     h1 {
-        color: white;
+        color: black;
         text-align: left;
         font-family: 'Roboto Slab', serif;
     }
@@ -28,7 +28,7 @@
     }
     
     span {
-        color: white;
+        color: #77002e;
         font-size: 25px;
         font-family: 'Edu VIC WA NT Beginner', cursive;
     }
@@ -41,7 +41,7 @@
     h2,
     h3 {
         margin: 0;
-        padding: 1rem 0;
+        padding: 0.5rem 0;
     }
     
     p {
