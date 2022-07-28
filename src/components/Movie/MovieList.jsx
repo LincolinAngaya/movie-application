@@ -2,11 +2,11 @@ import React from 'react'
 import './MovieItem.css'
 import MovieItem from '../Movie/MovieItem'
 
-function MovieList({movielist}) {
+function MovieList({movies}) {
   return (
       <section id="section-b" className="grid">
        <ul>
-          {movielist.map((movie) => 
+          {movies.map((movie) => 
           (
 
           <MovieItem 
