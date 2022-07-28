@@ -3,18 +3,18 @@ import poster from '../Pages/landing.jpg'
 import '../Movie/MovieItem.css'
 
 
-function MovieItem() {
+function MovieItem(props) {
   return (
      <section id="section-b" className="grid">
     <ul>
       <li>
         <div className="card">
-        <img   src={poster} alt='poster' />
+        <img   src={props.Title} alt='poster' />
           <div className="card-content">
-          <h1 className='title'> Movie Title:<span>The Post</span></h1>
-     <h1 className='year'>Movie Type:<span> Action</span></h1>
-     <h1 className='year'>Movie Year: <span>2021</span></h1>
-     <h1 className='description'>Movie Trailer:<span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem nesciunt quibusdam voluptate, debitis rem illo similique ipsa aliquid cumque quidem suscipit quos dolores. Tenetur quam asperiores</span> </h1>
+          <h1 className='title'> Movie Title:<span>{props.Year}</span></h1>
+     <h1 className='year'>Movie Type:<span> {props.Type}</span></h1>
+     <h1 className='year'>Movie Year: <span>{props.Year}</span></h1>
+     <h1 className='description'>Movie Trailer:<span>{props.Trailer}</span> </h1>
       <button className='action'>Pick Movie</button>
           </div>
         </div>
