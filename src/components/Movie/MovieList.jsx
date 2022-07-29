@@ -6,7 +6,15 @@ function MovieList({movies}) {
   return (
       <section id="section-b" className="grid">
        <ul>
-          {movies.map((movie) => 
+          {movies.filter((movie) =>{
+                if (search == ""){
+                    return movie;
+                }
+                else if(movie.Title.toLowerCase().includes(search.toLowerCase())){
+                    return movie;
+                }
+            }) 
+          .map((movie) => 
           (
 
           <MovieItem 
