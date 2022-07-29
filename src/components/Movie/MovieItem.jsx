@@ -1,8 +1,15 @@
 import React from 'react'
 import '../Movie/MovieItem.css'
+import {useContext} from 'react'
+import FavoriteContext from '../store/favorite-context'
 
 
 function MovieItem(props) {
+
+  
+  function toggleFavoriteStatusHandler(){
+
+  }
   return (
     <>
       <li>
@@ -13,7 +20,7 @@ function MovieItem(props) {
      <h1 className='year'>Movie Type:<span> {props.Type}</span></h1>
      <h1 className='year'>Movie Year: <span>{props.Year}</span></h1>
      <h1 className='description'>Movie Trailer:<span>{props.Trailer}</span> </h1>
-      <button className='action'>Pick Movie</button>
+      <button className='action' onClick={toggleFavoriteStatusHandler}>Pick Movie</button>
           </div>
         </div>
 
