@@ -2,19 +2,13 @@ import React from 'react'
 import './MovieItem.css'
 import MovieItem from '../Movie/MovieItem'
 
+
 function MovieList({movies}) {
   return (
+
       <section id="section-b" className="grid">
        <ul>
-          {movies.filter((movie) =>{
-                if (search == ""){
-                    return movie;
-                }
-                else if(movie.Title.toLowerCase().includes(search.toLowerCase())){
-                    return movie;
-                }
-            }) 
-          .map((movie) => 
+          {movies.map((movie) => 
           (
 
           <MovieItem 

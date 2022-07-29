@@ -42,7 +42,7 @@ function AllMovies() {
    }
   return (
     <>
-     <SearchBox  />
+    
      <h1 style={{color:'white'}}>All Movies</h1>
      <MovieList movies={loadedMovies} />
      
