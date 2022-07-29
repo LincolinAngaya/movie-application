@@ -8,12 +8,26 @@ function FavoriteContextProvider(props){
     const [userFavorites, setUserFavorite] = useState([]);
 
 
-    function addFavoriteHandler(){}
-    function removeFavoriteHandler(){}
-    function itemIsFavoriteHandler(){}
+    function addFavoriteHandler(favoriteMovie){
+        setUserFavorite((prevUserFavorites) => {
+            return prevUserFavorites.concat(favoriteMovie)
+        });
+    }
+
+    function removeFavoriteHandler(movieId){
+        setUserFavorite((prevUserFavorites) => {
+            return prevUserFavorites.filter(movie => movie.id !== movieId)
+        })
+    }
+    function itemIsFavoriteHandler(movieId){
+        return  userFavorites.some(movie => movie.Id === movieId)
+    }
 const context ={
        favorites:userFavorites,
        totalFavorites: userFavorites.length,
+      addFavorite: addFavoriteHandler,
+      removeFavorite:removeFavoriteHandler,
+     itemIsFavorite: itemIsFavoriteHandler
 };
 ;
 
