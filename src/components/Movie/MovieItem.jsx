@@ -16,7 +16,7 @@ function MovieItem(props) {
      <h1 className='year'>Movie Type:<span> {props.Type}</span></h1>
      <h1 className='year'>Movie Year: <span>{props.Year}</span></h1>
      <h1 className='description'>Movie Trailer:<span>{props.Trailer}</span> </h1>
-      <button className='action' onClick={() => setShow(!show)}>{show ? 'Pick Movie' : 'unpick Movie'}</button>
+      <button className={show ? 'action': 'action-1'} onClick={() => setShow(!show)}>{show ? 'Pick Movie' : 'unpick Movie'}</button>
           </div>
         </div>
 

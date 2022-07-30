@@ -92,3 +92,21 @@
             width: 35%;
         }
     }
+    
+    .action-1 {
+        font: inherit;
+        cursor: pointer;
+        background-color: yellow;
+        color: #77002e;
+        padding: 0.5rem 1.5rem;
+        border: 1px solid yellow;
+        border-radius: 4px;
+        font-weight: bold;
+    }
+    
+    .action-1:hover,
+    .action-1:active {
+        background-color: gray;
+        border-color: #fff;
+        color: white;
+    }
