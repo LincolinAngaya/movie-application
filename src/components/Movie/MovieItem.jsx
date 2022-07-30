@@ -4,7 +4,7 @@ import {useState} from 'react'
 
 
 function MovieItem(props) {
-  const [show, setShow]=useState(false)
+  const [show, setShow]=useState(true)
   
   return (
     <>
