@@ -2,7 +2,7 @@ import React from 'react'
 
 function FavoriteMovies() {
   return (
-    <div>FavoriteMovies</div>
+    <h1 style={{color:'white'}}>No movie picked yet</h1>
   )
 }
 
