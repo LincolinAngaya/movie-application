@@ -54,7 +54,7 @@ function AddNewMovieForm(props) {
             <textarea id="description" required rows='5'ref={trailerInputRef} />
         </div>
         <div className='actions'>
-            <button>Add Meetup</button>
+            <button>Add New Movie</button>
         </div>
     </form>
   </div>
